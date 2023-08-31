@@ -25,6 +25,8 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT &kp LGUI>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LSHFT &kp LGUI>
                 ;
         };
     };
