@@ -17,22 +17,15 @@
 };
  */
 
-/ {
-    macros {
-        gui_shift: gui_shift {
-            label = "GUI_SHIFT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT &kp LGUI>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LSHFT &kp LGUI>
-                ;
-        };
-    };
-};
 
 / {
+    ZMK_MACRO(gui_shift,
+        bindings
+            = <&macro_press &mt 0 &kp LSHFT &kp LGUI>
+            , <&macro_pause_for_release>
+            , <&macro_release &kp LSHFT &kp LGUI>
+            ;
+    )
     keymap {
         compatible = "zmk,keymap";
 
