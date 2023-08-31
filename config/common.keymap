@@ -24,7 +24,7 @@
           bindings
               = <&macro_press &mo 0 &kp LSHFT &kp LGUI>
               , <&macro_pause_for_release>
-              , <&macro_release &kp LSHFT &kp LGUI>
+              , <&macro_release &mo 0 &kp LSHFT &kp LGUI>
               ;
       )
     };
