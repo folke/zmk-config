@@ -156,8 +156,8 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ':'
+  - QUOTE
   - F7
   - F8
   - F9
