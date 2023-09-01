@@ -157,7 +157,7 @@ layers:
   - UP
   - RIGHT
   - ':'
-  - QUOTE
+  - '"'
   - F7
   - F8
   - F9
