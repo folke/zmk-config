@@ -27,7 +27,7 @@
 //    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼────────────┤                                   ├────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
 //    │      TAB      │      Q      │      W      │      E       │       R       │     T      │                                   │     Y      │       U       │      I       │      O      │      P      │   +   │
 //    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼────────────┤                                   ├────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
-//    │ &mt LCTRL ESC │ &hml LGUI A │ &hml LALT S │ &hml LCTRL D │ &hml LSHIFT F │     G      │                                   │     H      │ &hmr LSHIFT J │ &hmr LCTRL K │ &hmr LALT L │ &hmr LGUI ; │   '   │
+//    │ &mt LCTRL ESC │ &hml LGUI A │ &hml LALT S │ &hml LCTRL D │ &hml LSHIFT F │     G      │                                   │     H      │ &hmr LSHIFT J │ &hmr LCTRL K │ &hmr LALT L │ &hmr RGUI ; │   '   │
 //    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼────────────┼────────────────┬──────────────────┼────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
 //    │     LSHFT     │      Z      │      X      │      C       │       V       │     B      │       [        │        ]         │     N      │       M       │      ,       │      .      │      /      │ RSHFT │
 //    ╰───────────────┴─────────────┼─────────────┼──────────────┼───────────────┼────────────┼────────────────┼──────────────────┼────────────┼───────────────┼──────────────┼─────────────┼─────────────┴───────╯
@@ -35,7 +35,7 @@
 //                                  ╰─────────────┴──────────────┴───────────────┴────────────┴────────────────┴──────────────────┴────────────┴───────────────┴──────────────┴─────────────╯                      
   &kp GRAVE       &kp N1        &kp N2        &kp N3         &kp N4          &kp N5                                           &kp N6       &kp N7          &kp N8         &kp N9        &kp N0           &kp MINUS
   &kp TAB         &kp Q         &kp W         &kp E          &kp R           &kp T                                            &kp Y        &kp U           &kp I          &kp O         &kp P            &kp PLUS 
-  &mt LCTRL ESC   &hml LGUI A   &hml LALT S   &hml LCTRL D   &hml LSHIFT F   &kp G                                            &kp H        &hmr LSHIFT J   &hmr LCTRL K   &hmr LALT L   &hmr LGUI SEMI   &kp SQT  
+  &mt LCTRL ESC   &hml LGUI A   &hml LALT S   &hml LCTRL D   &hml LSHIFT F   &kp G                                            &kp H        &hmr LSHIFT J   &hmr LCTRL K   &hmr LALT L   &hmr RGUI SEMI   &kp SQT  
   &kp LSHFT       &kp Z         &kp X         &kp C          &kp V           &kp B        &kp LBKT         &kp RBKT           &kp N        &kp M           &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
                                 &kp LCTRL     &kp LALT       &kp LGUI        &lt 1 LGUI   &tm LSHIFT RET   &tm RSHIFT SPACE   &lt 2 RGUI   &kp BSPC        &kp LBKT       &kp RBKT                                
       >;
