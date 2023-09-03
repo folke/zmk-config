@@ -34,7 +34,7 @@ layers:
   - {t: J, h: LSHIFT}
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
-  - {t: ;, h: LGUI}
+  - {t: ;, h: RGUI}
   - ''''
   - LSHFT
   - Z
