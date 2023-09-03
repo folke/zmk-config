@@ -1,0 +1,87 @@
+/*
+  ╭────────────────────────────┬────────────────────────────╮
+  │  0   1   2   3   4   5     │      6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17     │     18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29     │     30  31  32  33  34  35 │
+  │ 36  37  38  39  40  41  42 │ 43  44  45  46  47  48  49 │
+  ╰───────╮ 50  51  52  53  54 │ 55  56  57  58  59 ╭───────╯
+          ╰────────────────────┴────────────────────╯            */
+
+// Left hand keys
+#define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42
+// Right hand keys
+#define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49
+// thumb cluster
+#define KEYS_T 50 51 52 53 54 55 56 57 58 59
+
+#define HM_TAPPING_TERM 280
+#define HM_TAPPING_TERM_FAST 200
+
+/ {
+
+  behaviors {
+
+    // Positional Homerow mods
+    // Homerow mods that prevent accidental activations when rolling keys,
+    // such as when typing `st` or `ne` on colemak-dh layouts or `as` on
+    // qwerty.
+    //
+    // Works by only allowing a mod to activate within tapping-term if
+    // it's on the opposite side of the keyboard or on the same side thumb
+    // keys.
+
+    // Further optimization using urob's timerless homerow mods method:
+    // https://github.com/urob/zmk-config#timeless-homerow-mods
+    hml: homerow_mods_left {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_MODS_LEFT";
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+
+      flavor = "balanced";
+      tapping-term-ms = <280>;
+      quick-tap-ms = <175>;        // repeat on tap-into-hold
+      // global-quick-tap-ms = <150>;         // requires PR #1387
+      global-quick-tap;
+      hold-trigger-key-positions = <KEYS_R KEYS_T>;
+      hold-trigger-on-release;       // requires PR #1423
+    };
+
+    hmr: homerow_mods_right {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_MODS_RIGHT";
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+
+      flavor = "balanced";
+      tapping-term-ms = <280>;
+      // global-quick-tap-ms = <150>;         // requires PR #1387
+      quick_tap_ms = <175>;
+      global-quick-tap;
+      hold-trigger-key-positions = <KEYS_L KEYS_T>;
+      hold-trigger-on-release;       // requires PR #1423
+    };
+
+
+    /*
+     * Non-Positional Homerow Mods
+     * Used for &mm_grescm_gui behavior on left hand.
+     *
+     * Usage: &hm LSHFT T
+     * Tap: T
+     * Tap-Tap-Hold: Repeat T
+     * Hold: LSHIFT
+     */
+    tm: thumb_mods {
+      compatible = "zmk,behavior-hold-tap";
+      label = "THUMB_MODS";
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+
+      flavor = "balanced";
+      tapping-term-ms = <200>;
+      quick_tap_ms = <175>;
+    };
+
+  };
+};
