@@ -25,16 +25,16 @@ layers:
   - P
   - +
   - {t: ESC, h: LCTRL}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: LSHIFT}
+  - {t: K, h: LCTRL}
+  - {t: L, h: LALT}
+  - {t: ;, h: LGUI}
   - ''''
   - LSHFT
   - Z
