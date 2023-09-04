@@ -3,6 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include "includes/mods.dtsi"
+#include "includes/combos.dtsi"
+
+#define BASE 0
+#define LOWER   1
+#define RAISE   2
 
 &mt {
   tapping-term-ms = <200>;
@@ -22,22 +27,22 @@
 
     default_layer {
       bindings = <
-//    ╭───────────────┬─────────────┬─────────────┬──────────────┬───────────────┬────────────╮                                   ╭────────────┬───────────────┬──────────────┬─────────────┬─────────────┬───────╮
-//    │       `       │      1      │      2      │      3       │       4       │     5      │                                   │     6      │       7       │      8       │      9      │      0      │   -   │
-//    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼────────────┤                                   ├────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
-//    │      TAB      │      Q      │      W      │      E       │       R       │     T      │                                   │     Y      │       U       │      I       │      O      │      P      │   +   │
-//    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼────────────┤                                   ├────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
-//    │ &mt LCTRL ESC │ &hml LGUI A │ &hml LALT S │ &hml LCTRL D │ &hml LSHIFT F │     G      │                                   │     H      │ &hmr LSHIFT J │ &hmr LCTRL K │ &hmr LALT L │ &hmr RGUI ; │   '   │
-//    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼────────────┼────────────────┬──────────────────┼────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
-//    │     LSHFT     │      Z      │      X      │      C       │       V       │     B      │       [        │        ]         │     N      │       M       │      ,       │      .      │      /      │ RSHFT │
-//    ╰───────────────┴─────────────┼─────────────┼──────────────┼───────────────┼────────────┼────────────────┼──────────────────┼────────────┼───────────────┼──────────────┼─────────────┼─────────────┴───────╯
-//                                  │    LCTRL    │     LALT     │     LGUI      │ &lt 1 LGUI │ &tm LSHIFT RET │ &tm RSHIFT SPACE │ &lt 2 RGUI │     BSPC      │      [       │      ]      │                      
-//                                  ╰─────────────┴──────────────┴───────────────┴────────────┴────────────────┴──────────────────┴────────────┴───────────────┴──────────────┴─────────────╯                      
-  &kp GRAVE       &kp N1        &kp N2        &kp N3         &kp N4          &kp N5                                           &kp N6       &kp N7          &kp N8         &kp N9        &kp N0           &kp MINUS
-  &kp TAB         &kp Q         &kp W         &kp E          &kp R           &kp T                                            &kp Y        &kp U           &kp I          &kp O         &kp P            &kp PLUS 
-  &mt LCTRL ESC   &hml LGUI A   &hml LALT S   &hml LCTRL D   &hml LSHIFT F   &kp G                                            &kp H        &hmr LSHIFT J   &hmr LCTRL K   &hmr LALT L   &hmr RGUI SEMI   &kp SQT  
-  &kp LSHFT       &kp Z         &kp X         &kp C          &kp V           &kp B        &kp LBKT         &kp RBKT           &kp N        &kp M           &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
-                                &kp LCTRL     &kp LALT       &kp LGUI        &lt 1 LGUI   &tm LSHIFT RET   &tm RSHIFT SPACE   &lt 2 RGUI   &kp BSPC        &kp LBKT       &kp RBKT                                
+//    ╭───────────────┬─────────────┬─────────────┬──────────────┬───────────────┬───────────────╮                                   ╭────────────────┬───────────────┬──────────────┬─────────────┬─────────────┬───────╮
+//    │       `       │      1      │      2      │      3       │       4       │       5       │                                   │       6        │       7       │      8       │      9      │      0      │   -   │
+//    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼───────────────┤                                   ├────────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
+//    │      TAB      │      Q      │      W      │      E       │       R       │       T       │                                   │       Y        │       U       │      I       │      O      │      P      │   +   │
+//    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼───────────────┤                                   ├────────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
+//    │ &mt LCTRL ESC │ &hml LGUI A │ &hml LALT S │ &hml LCTRL D │ &hml LSHIFT F │       G       │                                   │       H        │ &hmr LSHIFT J │ &hmr LCTRL K │ &hmr LALT L │ &hmr RGUI ; │   '   │
+//    ├───────────────┼─────────────┼─────────────┼──────────────┼───────────────┼───────────────┼────────────────┬──────────────────┼────────────────┼───────────────┼──────────────┼─────────────┼─────────────┼───────┤
+//    │     LSHFT     │      Z      │      X      │      C       │       V       │       B       │       [        │        ]         │       N        │       M       │      ,       │      .      │      /      │ RSHFT │
+//    ╰───────────────┴─────────────┼─────────────┼──────────────┼───────────────┼───────────────┼────────────────┼──────────────────┼────────────────┼───────────────┼──────────────┼─────────────┼─────────────┴───────╯
+//                                  │    LCTRL    │     LALT     │      ESC      │ &lt LOWER TAB │ &tm LSHIFT RET │ &tm RSHIFT SPACE │ &lt RAISE BSPC │      DEL      │      [       │      ]      │                      
+//                                  ╰─────────────┴──────────────┴───────────────┴───────────────┴────────────────┴──────────────────┴────────────────┴───────────────┴──────────────┴─────────────╯                      
+  &kp GRAVE       &kp N1        &kp N2        &kp N3         &kp N4          &kp N5                                              &kp N6           &kp N7          &kp N8         &kp N9        &kp N0           &kp MINUS
+  &kp TAB         &kp Q         &kp W         &kp E          &kp R           &kp T                                               &kp Y            &kp U           &kp I          &kp O         &kp P            &kp PLUS 
+  &mt LCTRL ESC   &hml LGUI A   &hml LALT S   &hml LCTRL D   &hml LSHIFT F   &kp G                                               &kp H            &hmr LSHIFT J   &hmr LCTRL K   &hmr LALT L   &hmr RGUI SEMI   &kp SQT  
+  &kp LSHFT       &kp Z         &kp X         &kp C          &kp V           &kp B           &kp LBKT         &kp RBKT           &kp N            &kp M           &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
+                                &kp LCTRL     &kp LALT       &kp ESC         &lt LOWER TAB   &tm LSHIFT RET   &tm RSHIFT SPACE   &lt RAISE BSPC   &kp DEL         &kp LBKT       &kp RBKT                                
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -54,13 +59,13 @@
 //    ├────────┼──────────┼──────────┼──────────┼──────────┼──────────┼───┬───┼────┼────┼────┼─────┼─────┼─────┤
 //    │        │  EP_ON   │  EP_OFF  │  EP_TOG  │          │          │   │   │    │ -  │ +  │  [  │  ]  │  |  │
 //    ╰────────┴──────────┼──────────┼──────────┼──────────┼──────────┼───┼───┼────┼────┼────┼─────┼─────┴─────╯
-//                        │          │          │          │          │   │   │    │    │    │     │            
+//                        │          │          │   LGUI   │          │   │   │    │    │    │     │            
 //                        ╰──────────┴──────────┴──────────┴──────────┴───┴───┴────┴────┴────┴─────╯            
   &bt BT_CLR   &bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3   &bt BT_SEL 4                     &trans      &trans      &trans     &trans     &trans     &trans   
   &kp F1       &kp F2             &kp F3              &kp F4              &kp F5         &kp F6                           &kp F7      &kp F8      &kp F9     &kp F10    &kp F11    &kp F12  
   &kp GRAVE    &kp EXCL           &kp AT              &kp HASH            &kp DOLLAR     &kp PRCNT                        &kp CARET   &kp AMPS    &kp STAR   &kp LPAR   &kp RPAR   &kp TILDE
   &trans       &ext_power EP_ON   &ext_power EP_OFF   &ext_power EP_TOG   &trans         &trans         &trans   &trans   &trans      &kp MINUS   &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE 
-                                  &trans              &trans              &trans         &trans         &trans   &trans   &trans      &trans      &trans     &trans                         
+                                  &trans              &trans              &kp LGUI       &trans         &trans   &trans   &trans      &trans      &trans     &trans                         
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

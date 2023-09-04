@@ -52,12 +52,12 @@ layers:
   - RSHFT
   - LCTRL
   - LALT
-  - LGUI
-  - {t: LGUI, h: lower}
+  - ESC
+  - {t: TAB, h: lower}
   - {t: RET, h: LSHIFT}
   - {t: SPACE, h: RSHIFT}
-  - {t: RGUI, h: raise}
-  - BSPC
+  - {t: BSPC, h: raise}
+  - DEL
   - '['
   - ']'
   lower:
@@ -113,7 +113,7 @@ layers:
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LGUI
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -182,3 +182,8 @@ layers:
   - {t: ▽, type: trans}
   - '{'
   - '}'
+combos:
+- p: [55, 56]
+  k: RGUI
+- p: [53, 54]
+  k: LGUI
