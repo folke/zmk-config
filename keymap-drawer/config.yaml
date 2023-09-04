@@ -296,7 +296,7 @@ parse_config:
     PG_DN: "⇟"
     LEFT: "←"
     RIGHT: "→"
-    K_MULTIPLY: "*"
+    KP_MULTIPLY: "*"
     UP: "↑"
     DOWN: "↓"
     KP_PLUS: "+"
