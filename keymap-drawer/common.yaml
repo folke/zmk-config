@@ -42,8 +42,8 @@ layers:
   - C
   - V
   - B
-  - '['
-  - ']'
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - N
   - M
   - {t: ',', s: ;}
@@ -61,30 +61,30 @@ layers:
   - '['
   - ']'
   lower:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - '`'
   - '!'
   - '@'
@@ -96,11 +96,11 @@ layers:
   - '*'
   - (
   - )
-  - '~'
   - {t: ' ', type: trans}
-  - EP ON
-  - EP OFF
-  - 🔌
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -110,7 +110,7 @@ layers:
   - +
   - '{'
   - \
-  - '|'
+  - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - ⌘
