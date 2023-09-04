@@ -200,10 +200,10 @@ layers:
   - F7
   - F8
   - F9
-  - {t: ▽, type: trans}
+  - PSCRN
   - EP TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BRI DN
+  - BRI UP
   - {t: ▽, type: trans}
   - PP
   - {t: ▽, type: trans}
