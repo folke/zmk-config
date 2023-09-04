@@ -34,8 +34,8 @@ layers:
   - {t: J, h: LSHIFT}
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
-  - {t: ;, h: RGUI}
-  - ''''
+  - {t: '''', h: RGUI}
+  - ;
   - LSHFT
   - Z
   - X
@@ -156,7 +156,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - ':'
+  - RGUI
   - '"'
   - F7
   - F8
