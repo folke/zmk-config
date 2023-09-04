@@ -177,13 +177,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&caps_word'
   - {type: held}
   - {t: ▽, type: trans}
   - '{'
   - '}'
-combos:
-- p: [55, 56]
-  k: RGUI
-- p: [53, 54]
-  k: LGUI
