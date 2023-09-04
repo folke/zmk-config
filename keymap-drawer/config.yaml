@@ -19,7 +19,7 @@ draw_config:
   small_pad: 2.0
   legend_rel_x: 0.0
   legend_rel_y: 0.0
-  draw_key_sides: false
+  draw_key_sides: true
   key_side_pars:
     rel_x: 0
     rel_y: 4
@@ -290,8 +290,13 @@ parse_config:
     C_BRI_UP: "🔆"
     C_BRI_DN: "🔅"
     EP_TOG: "🔌"
+    PG_UP: "⇞"
+    HOME: "⇱"
+    END: "⇲"
+    PG_DN: "⇟"
     LEFT: "←"
     RIGHT: "→"
+    K_MULTIPLY: "*"
     UP: "↑"
     DOWN: "↓"
     KP_PLUS: "+"
