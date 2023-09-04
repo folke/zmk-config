@@ -52,8 +52,8 @@ layers:
   - RSHFT
   - LCTRL
   - LALT
-  - ESC
-  - {t: TAB, h: lower}
+  - {t: TAB, h: LGUI}
+  - {t: ESC, h: lower}
   - {t: RET, h: LSHIFT}
   - {t: SPACE, h: RSHIFT}
   - {t: BSPC, h: raise}
