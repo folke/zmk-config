@@ -54,19 +54,19 @@
 //    ╭───┬───┬───┬───┬───┬───╮       ╭───┬───┬───┬───┬───┬───╮
 //    │   │   │   │   │   │   │       │   │   │   │   │   │   │
 //    ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
-//    │   │   │ 7 │ 8 │ 9 │ 0 │       │ < │ > │ [ │ ] │ % │   │
+//    │   │   │ 7 │ 8 │ 9 │ 0 │       │ * │ / │ { │ } │ % │   │
 //    ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
-//    │   │ @ │ 4 │ 5 │ 6 │ = │       │ # │ * │ { │ } │ ` │   │
+//    │   │ @ │ 4 │ 5 │ 6 │ = │       │ [ │ ] │ ( │ ) │ ` │   │
 //    ├───┼───┼───┼───┼───┼───┼───┬───┼───┼───┼───┼───┼───┼───┤
-//    │   │   │ 1 │ 2 │ 3 │   │   │   │ ^ │ $ │ ( │ ) │ ~ │   │
+//    │   │   │ 1 │ 2 │ 3 │ # │   │   │ ^ │ $ │ < │ > │ ~ │   │
 //    ╰───┴───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┴───╯
 //            │   │   │   │   │   │ _ │ - │ + │   │   │        
 //            ╰───┴───┴───┴───┴───┴───┴───┴───┴───┴───╯        
-  &trans   &trans   &trans   &trans   &trans   &trans                                &trans      &trans            &trans     &trans     &trans      &trans
-  &trans   &trans   &kp N7   &kp N8   &kp N9   &kp N0                                &kp LT      &kp GT            &kp LBKT   &kp RBKT   &kp PRCNT   &trans
-  &trans   &kp AT   &kp N4   &kp N5   &kp N6   &kp EQUAL                             &kp HASH    &kp KP_MULTIPLY   &kp LBRC   &kp RBRC   &kp GRAVE   &trans
-  &trans   &trans   &kp N1   &kp N2   &kp N3   &trans      &trans   &trans           &kp CARET   &kp DOLLAR        &kp LPAR   &kp RPAR   &kp TILDE   &trans
-                    &trans   &trans   &trans   &trans      &trans   &kp UNDERSCORE   &kp MINUS   &kp PLUS          &trans     &trans                       
+  &trans   &trans   &trans   &trans   &trans   &trans                                &trans            &trans       &trans     &trans     &trans      &trans
+  &trans   &trans   &kp N7   &kp N8   &kp N9   &kp N0                                &kp KP_MULTIPLY   &kp FSLH     &kp LBRC   &kp RBRC   &kp PRCNT   &trans
+  &trans   &kp AT   &kp N4   &kp N5   &kp N6   &kp EQUAL                             &kp LBKT          &kp RBKT     &kp LPAR   &kp RPAR   &kp GRAVE   &trans
+  &trans   &trans   &kp N1   &kp N2   &kp N3   &kp HASH    &trans   &trans           &kp CARET         &kp DOLLAR   &kp LT     &kp GT     &kp TILDE   &trans
+                    &trans   &trans   &trans   &trans      &trans   &kp UNDERSCORE   &kp MINUS         &kp PLUS     &trans     &trans                       
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
