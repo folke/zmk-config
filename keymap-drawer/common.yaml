@@ -200,12 +200,12 @@ layers:
   - F7
   - F8
   - F9
-  - ⎙
+  - 🖨️
   - 🔌
   - 🔅
   - 🔆
   - {t: ' ', type: trans}
-  - ⏯︎
+  - ⏯️
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - F11
@@ -213,10 +213,10 @@ layers:
   - F5
   - F6
   - {t: ' ', type: trans}
-  - ⏴︎
+  - ⏮️
   - 🔉
   - 🔊
-  - ⏵︎
+  - ⏭️"
   - 🔇
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -227,11 +227,11 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - BT CLR
+  - 🛜1
+  - 🛜2
+  - 🛜3
+  - 🛜4
+  - 📴
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -323,5 +323,9 @@ combos:
   k: '>'
 - p: [28, 31]
   k: 🔠
+- p: [17, 18]
+  k: 🔄
+- p: [41, 44]
+  k: 💾
 - p: [28, 29]
   k: '='

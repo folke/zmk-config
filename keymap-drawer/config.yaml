@@ -145,6 +145,14 @@ parse_config:
   raw_binding_map:
     '&ext_power EP_TOG': "🔌"
     '&caps_word': "🔠"
+    '&bootloader': "💾"
+    '&sys_reset': "🔄"
+    '&bt BT_SEL 0': 🛜1
+    '&bt BT_SEL 1': 🛜2
+    '&bt BT_SEL 2': 🛜3
+    '&bt BT_SEL 3': 🛜4
+    '&bt BT_SEL 4': 🛜5
+    '&bt BT_CLR': 📴
   sticky_label: sticky
   trans_legend:
     t: " "
@@ -282,9 +290,9 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    C_NEXT: "⏵︎"
-    C_PREV: "⏴︎"
-    C_PP: "⏯︎"
+    C_NEXT: ⏭️"
+    C_PREV: ⏮️
+    C_PP: ⏯️
     C_MUTE: "🔇"
     C_VOL_DN: "🔉"
     C_VOL_UP: "🔊"
@@ -323,5 +331,5 @@ parse_config:
     BSPC: ⌫
     DEL: ⌦
     SPACE: ⎵
-    PSCRN: ⎙
+    PSCRN: 🖨️
   zmk_combos: {}

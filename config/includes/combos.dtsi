@@ -64,6 +64,18 @@
           bindings = <&caps_word>;
         };
 
+        combo_reset {
+          timeout-ms = <50>;
+          key-positions = <17 18>;
+          bindings = <&sys_reset>;
+        };
+
+        combo_boot {
+          timeout-ms = <50>;
+          key-positions = <41 44>;
+          bindings = <&bootloader>;
+        };
+
         combo_equal {
           timeout-ms = <50>;
           key-positions = <28 29>;
