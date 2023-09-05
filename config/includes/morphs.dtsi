@@ -16,7 +16,7 @@
         };
         quote_morph: quote_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_MORPH";
+            label = "QUOTE_MORPH";
             #binding-cells = <0>;
             bindings = <&kp DQT>, <&kp SQT>;
             mods = <(MOD_RSFT)>;
