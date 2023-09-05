@@ -1,18 +1,18 @@
 layers:
   default:
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '-'
-  - ↹
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - Q
   - W
   - E
@@ -23,8 +23,8 @@ layers:
   - I
   - O
   - P
-  - +
-  - {t: ⎋, h: ⌃}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - {t: A, h: ⌘}
   - {t: S, h: ⎇}
   - {t: D, h: ⌃}
@@ -35,8 +35,8 @@ layers:
   - {t: K, h: ⌃}
   - {t: L, h: ⎇}
   - {t: '''', h: ⌘}
-  - ;
-  - ⇧
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - Z
   - X
   - C
@@ -49,17 +49,17 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - ⇧
-  - ⌃
-  - ⎇
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - {t: ↹, h: ⌘}
   - {t: ⎋, h: lower}
   - {t: ⏎, h: ⇧}
   - {t: ⎵, h: ⇧}
   - {t: ⌫, h: raise}
   - {t: ⌦, h: fun}
-  - '['
-  - ']'
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   lower:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -177,7 +177,7 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - '&caps_word'
+  - 🔠
   - {type: held}
   - {t: ' ', type: trans}
   - '{'
@@ -304,3 +304,24 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+combos:
+- p: [19, 20]
+  k: '['
+- p: [20, 21]
+  k: ']'
+- p: [31, 32]
+  k: '{'
+- p: [32, 33]
+  k: '}'
+- p: [45, 46]
+  k: (
+- p: [46, 47]
+  k: )
+- p: [19, 31]
+  k: <
+- p: [21, 33]
+  k: '>'
+- p: [28, 31]
+  k: 🔠
+- p: [28, 29]
+  k: '='

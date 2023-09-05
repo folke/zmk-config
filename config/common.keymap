@@ -73,22 +73,22 @@
 
     raise_layer {
       bindings = <
-//    ╭───┬───┬───┬───┬───┬───╮                ╭───┬───┬───┬───┬──────┬───╮
-//    │   │   │   │   │   │   │                │   │   │   │   │      │   │
-//    ├───┼───┼───┼───┼───┼───┤                ├───┼───┼───┼───┼──────┼───┤
-//    │   │   │   │   │   │   │                │ & │ / │ | │ \ │      │   │
-//    ├───┼───┼───┼───┼───┼───┤                ├───┼───┼───┼───┼──────┼───┤
-//    │   │   │   │   │   │   │                │ ← │ ↓ │ ↑ │ → │ RGUI │   │
-//    ├───┼───┼───┼───┼───┼───┼───┬────────────┼───┼───┼───┼───┼──────┼───┤
-//    │   │   │   │   │   │   │   │            │ ⇱ │ ⇟ │ ⇞ │ ⇲ │      │   │
-//    ╰───┴───┼───┼───┼───┼───┼───┼────────────┼───┼───┼───┼───┼──────┴───╯
-//            │   │   │   │   │   │ &caps_word │   │   │ { │ } │           
-//            ╰───┴───┴───┴───┴───┴────────────┴───┴───┴───┴───╯           
-  &trans   &trans   &trans   &trans   &trans   &trans                         &trans     &trans      &trans      &trans      &trans     &trans
-  &trans   &trans   &trans   &trans   &trans   &trans                         &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    &trans     &trans
-  &trans   &trans   &trans   &trans   &trans   &trans                         &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI   &trans
-  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans       &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans     &trans
-                    &trans   &trans   &trans   &trans   &trans   &caps_word   &trans     &trans      &kp LBRC    &kp RBRC                     
+//    ╭───┬───┬───┬───┬───┬───╮       ╭───┬───┬───┬───┬──────┬───╮
+//    │   │   │   │   │   │   │       │   │   │   │   │      │   │
+//    ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼──────┼───┤
+//    │   │   │   │   │   │   │       │ & │ / │ | │ \ │      │   │
+//    ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼──────┼───┤
+//    │   │   │   │   │   │   │       │ ← │ ↓ │ ↑ │ → │ RGUI │   │
+//    ├───┼───┼───┼───┼───┼───┼───┬───┼───┼───┼───┼───┼──────┼───┤
+//    │   │   │   │   │   │   │   │   │ ⇱ │ ⇟ │ ⇞ │ ⇲ │      │   │
+//    ╰───┴───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼──────┴───╯
+//            │   │   │   │   │   │   │   │   │ { │ } │           
+//            ╰───┴───┴───┴───┴───┴───┴───┴───┴───┴───╯           
+  &trans   &trans   &trans   &trans   &trans   &trans                     &trans     &trans      &trans      &trans      &trans     &trans
+  &trans   &trans   &trans   &trans   &trans   &trans                     &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    &trans     &trans
+  &trans   &trans   &trans   &trans   &trans   &trans                     &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI   &trans
+  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans     &trans
+                    &trans   &trans   &trans   &trans   &trans   &trans   &trans     &trans      &kp LBRC    &kp RBRC                     
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };

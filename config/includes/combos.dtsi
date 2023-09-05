@@ -12,5 +12,65 @@
         //     key-positions = <53 54>;
         //     bindings = <&kp LGUI>;
         // };
+
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp LBKT>;
+        };
+
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp RBKT>;
+        };
+
+        combo_lbrc {
+          timeout-ms = <50>;
+          key-positions = <31 32>;
+          bindings = <&kp LBRC>;
+        };
+
+        combo_rbrc {
+          timeout-ms = <50>;
+          key-positions = <32 33>;
+          bindings = <&kp RBRC>;
+        };
+
+        combo_lpar {
+          timeout-ms = <50>;
+          key-positions = <45 46>;
+          bindings = <&kp LPAR>;
+        };
+
+        combo_rpar {
+          timeout-ms = <50>;
+          key-positions = <46 47>;
+          bindings = <&kp RPAR>;
+        };
+
+        combo_lt {
+          timeout-ms = <50>;
+          key-positions = <19 31>;
+          bindings = <&kp LT>;
+        };
+
+        combo_gt {
+          timeout-ms = <50>;
+          key-positions = <21 33>;
+          bindings = <&kp GT>;
+        };
+
+        combo_caps_word {
+          timeout-ms = <50>;
+          key-positions = <28 31>;
+          bindings = <&caps_word>;
+        };
+
+        combo_equal {
+          timeout-ms = <50>;
+          key-positions = <28 29>;
+          bindings = <&kp EQUAL>;
+        };
     };
 };
