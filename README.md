@@ -1,3 +1,3 @@
-# aurora-sofle-v2
+# My Personal Keymap for the Chocofi
 
-![Keymap](keymap-drawer/common.svg)
+![Keymap](img/corne.svg)

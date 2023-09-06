@@ -1,18 +1,18 @@
 layers:
-  default:
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  Base:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Q
   - W
   - E
@@ -23,8 +23,8 @@ layers:
   - I
   - O
   - P
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
   - {t: A, h: ⌘}
   - {t: S, h: ⎇}
   - {t: D, h: ⌃}
@@ -35,248 +35,289 @@ layers:
   - {t: K, h: ⌃}
   - {t: L, h: ⎇}
   - {t: '''', h: ⌘}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
   - Z
   - X
   - C
   - V
   - B
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
   - N
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ↹, h: ⌘}
-  - {t: ⎋, h: lower}
-  - {t: ⏎, h: ⇧}
+  - {t: ⎋, h: Lower}
+  - {t: ⏎, h: Adjust}
   - {t: ⎵, h: ⇧}
-  - {t: ⌫, h: raise}
-  - {t: ⌦, h: fun}
+  - {t: ⌫, h: Raise}
+  - {t: ⌦, h: Fun}
+  - ''
+  - ''
+  Lower:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  lower:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '*'
-  - /
+  - '['
+  - ']'
   - '{'
   - '}'
   - '%'
+  - ''
+  - ''
+  - ⌘
+  - ⎇
+  - ⌃
+  - ⇧
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - '@'
-  - '4'
-  - '5'
-  - '6'
+  - '"'
   - '='
-  - '['
-  - ']'
   - (
   - )
   - '`'
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '#'
+  - 🌍
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - ''
+  - ''
   - ^
   - $
   - <
   - '>'
   - '~'
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {type: held}
   - {t: ' ', type: trans}
   - _
   - '-'
   - +
+  - ''
+  - ''
+  Raise:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  raise:
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - '&'
   - /
   - '|'
   - \
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - '@'
+  - '4'
+  - '5'
+  - '6'
+  - '*'
   - ←
   - ↓
   - ↑
   - →
   - ⌘
+  - ''
+  - ''
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '#'
+  - ''
+  - ''
   - ⇱
   - ⇟
   - ⇞
   - ⇲
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {type: held}
   - {t: ' ', type: trans}
-  - '{'
-  - '}'
-  fun:
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
+  Fun:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F12
   - F7
   - F8
   - F9
   - 🖨️
-  - 🔌
-  - 🔅
-  - 🔆
-  - {t: ' ', type: trans}
-  - ⏯️
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ''
+  - ''
   - F11
   - F4
   - F5
   - F6
   - {t: ' ', type: trans}
-  - ⏮️
-  - 🔉
-  - 🔊
-  - ⏭️"
-  - 🔇
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ⇧
+  - ⌃
+  - ⎇
+  - ⌘
+  - ''
+  - ''
   - F10
   - F1
   - F2
   - F3
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - 🛜1
-  - 🛜2
-  - 🛜3
-  - 🛜4
-  - 📴
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {type: held}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  empty:
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
+  Adjust:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - 🔄
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - 🔌
+  - 🔅
+  - 🔆
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - 🔄
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - 🔇
+  - 🔉
+  - 🔊
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - 🛜❌
+  - 🛜🔽
+  - 🛜🔼
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - ''
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {type: held}
+  - ⏯️
+  - ⏮️
+  - ⏭️
+  - ''
+  - ''
+  Empty:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -287,6 +328,8 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -297,35 +340,56 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - ''
+  - ''
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ''
+  - ''
 combos:
-- p: [19, 31]
-  k: '['
-- p: [21, 33]
-  k: ']'
-- p: [19, 20]
-  k: '{'
-- p: [20, 21]
-  k: '}'
-- p: [31, 32]
-  k: (
-- p: [32, 33]
-  k: )
-- p: [45, 46]
-  k: <
-- p: [46, 47]
-  k: '>'
 - p: [28, 31]
   k: 🔠
-- p: [17, 18]
-  k: 🔄
-- p: [41, 44]
-  k: 💾
-- p: [28, 29]
-  k: '='
+  l: [Base]
+- p: [19, 31]
+  k: '['
+  l: [Base]
+- p: [21, 33]
+  k: ']'
+  l: [Base]
+- p: [19, 20]
+  k: '{'
+  l: [Base]
+- p: [20, 21]
+  k: '}'
+  l: [Base]
+- p: [31, 32]
+  k: (
+  l: [Base]
+- p: [32, 33]
+  k: )
+  l: [Base]
+- p: [45, 46]
+  k: <
+  l: [Base]
+- p: [46, 47]
+  k: '>'
+  l: [Base]

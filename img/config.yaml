@@ -147,12 +147,15 @@ parse_config:
     '&caps_word': "🔠"
     '&bootloader': "💾"
     '&sys_reset': "🔄"
+    '&reset_td': "🔄"
     '&bt BT_SEL 0': 🛜1
     '&bt BT_SEL 1': 🛜2
     '&bt BT_SEL 2': 🛜3
     '&bt BT_SEL 3': 🛜4
     '&bt BT_SEL 4': 🛜5
-    '&bt BT_CLR': 📴
+    '&bt BT_NXT': 🛜🔼
+    '&bt BT_PRV': 🛜🔽
+    '&bt BT_CLR': 🛜❌
   sticky_label: sticky
   trans_legend:
     t: " "
@@ -290,7 +293,7 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    C_NEXT: ⏭️"
+    C_NEXT: ⏭️
     C_PREV: ⏮️
     C_PP: ⏯️
     C_MUTE: "🔇"
@@ -298,6 +301,7 @@ parse_config:
     C_VOL_UP: "🔊"
     C_BRI_UP: "🔆"
     C_BRI_DN: "🔅"
+    K_CMENU: 🌍
     EP_TOG: "🔌"
     PG_UP: "⇞"
     HOME: "⇱"

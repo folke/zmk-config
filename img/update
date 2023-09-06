@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+LAYERS="Base Lower Raise Adjust Fun"
+
+draw() {
+	keymap -c img/config.yaml parse -z config/"$1".keymap >./img/"$1".yaml
+	keymap -c img/config.yaml draw --select-layers $LAYERS $2 ./img/"$1".yaml >./img/"$1".svg
+}
+
+draw splitkb_aurora_sofle "-k splitkb/aurora/sofle_v2/rev1"
+draw corne "-k chocofi"

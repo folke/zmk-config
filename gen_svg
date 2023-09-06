@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-
-keymap -c keymap-drawer/config.yaml parse -z config/common.keymap >./keymap-drawer/common.yaml
-keymap -c keymap-drawer/config.yaml draw ./keymap-drawer/common.yaml -k splitkb/aurora/sofle_v2/rev1 >./keymap-drawer/common.svg
