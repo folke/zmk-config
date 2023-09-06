@@ -1,85 +1,98 @@
 / {
-    combos {
-        compatible = "zmk,combos";
+  combos {
+    compatible = "zmk,combos";
 
-        // [
-        combo_lbkt {
-            timeout-ms = <50>;
-            key-positions = <19 31>;
-            bindings = <&kp LBKT>;
-        };
-
-        // ]
-        combo_rbkt {
-            timeout-ms = <50>;
-            key-positions = <21 33>;
-            bindings = <&kp RBKT>;
-        };
-
-        // {
-        combo_lbrc {
-          timeout-ms = <50>;
-          key-positions = <19 20>;
-          bindings = <&kp LBRC>;
-        };
-
-        // }
-        combo_rbrc {
-          timeout-ms = <50>;
-          key-positions = <20 21>;
-          bindings = <&kp RBRC>;
-        };
-
-        // (
-        combo_lpar {
-          timeout-ms = <50>;
-          key-positions = <31 32>;
-          bindings = <&kp LPAR>;
-        };
-
-        // )
-        combo_rpar {
-          timeout-ms = <50>;
-          key-positions = <32 33>;
-          bindings = <&kp RPAR>;
-        };
-
-        // <
-        combo_lt {
-          timeout-ms = <50>;
-          key-positions = <45 46>;
-          bindings = <&kp LT>;
-        };
-
-        // >
-        combo_gt {
-          timeout-ms = <50>;
-          key-positions = <46 47>;
-          bindings = <&kp GT>;
-        };
-
-        combo_caps_word {
-          timeout-ms = <50>;
-          key-positions = <28 31>;
-          bindings = <&caps_word>;
-        };
-
-        combo_reset {
-          timeout-ms = <50>;
-          key-positions = <17 18>;
-          bindings = <&sys_reset>;
-        };
-
-        combo_boot {
-          timeout-ms = <50>;
-          key-positions = <41 44>;
-          bindings = <&bootloader>;
-        };
-
-        combo_equal {
-          timeout-ms = <50>;
-          key-positions = <28 29>;
-          bindings = <&kp EQUAL>;
-        };
+    combo_caps_word {
+      timeout-ms = <50>;
+      key-positions = <LM1 RM1>;
+      bindings = <&caps_word>;
+      layers = <BASE>;
     };
+
+    // combo_reset {
+    //   timeout-ms = <50>;
+    //   key-positions = <LT0 RT0>;
+    //   bindings = <&sys_reset>;
+    //   layers = <BASE>;
+    // };
+    //
+    // combo_boot {
+    //   timeout-ms = <50>;
+    //   key-positions = <LB0 RB0>;
+    //   bindings = <&bootloader>;
+    //   layers = <BASE>;
+    // };
+
+    // combo_equal {
+    //   timeout-ms = <50>;
+    //   key-positions = <LM1 LM0>;
+    //   bindings = <&kp EQUAL>;
+    //   layers = <BASE>;
+    // };
+
+    // [
+    combo_lbkt {
+      timeout-ms = <50>;
+      key-positions = <RT1 RM1>;
+      bindings = <&kp LBKT>;
+      layers = <BASE>;
+    };
+
+    // ]
+    combo_rbkt {
+      timeout-ms = <50>;
+      key-positions = <RT3 RM3>;
+      bindings = <&kp RBKT>;
+      layers = <BASE>;
+    };
+
+    // {
+    combo_lbrc {
+      timeout-ms = <50>;
+      key-positions = <RT1 RT2>;
+      bindings = <&kp LBRC>;
+      layers = <BASE>;
+    };
+
+    // }
+    combo_rbrc {
+      timeout-ms = <50>;
+      key-positions = <RT2 RT3>;
+      bindings = <&kp RBRC>;
+      layers = <BASE>;
+    };
+
+    // (
+    combo_lpar {
+      timeout-ms = <50>;
+      key-positions = <RM1 RM2>;
+      bindings = <&kp LPAR>;
+      layers = <BASE>;
+    };
+
+    // )
+    combo_rpar {
+      timeout-ms = <50>;
+      key-positions = <RM2 RM3>;
+      bindings = <&kp RPAR>;
+      layers = <BASE>;
+    };
+
+    // <
+    combo_lt {
+      timeout-ms = <50>;
+      key-positions = <RB1 RB2>;
+      bindings = <&kp LT>;
+      layers = <BASE>;
+    };
+
+    // >
+    combo_gt {
+      timeout-ms = <50>;
+      key-positions = <RB2 RB3>;
+      bindings = <&kp GT>;
+      layers = <BASE>;
+    };
+
+  };
 };

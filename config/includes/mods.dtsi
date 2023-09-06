@@ -1,5 +1,3 @@
-#include "keys.dtsi"
-
 #define HM_TAPPING_TERM 280
 #define HM_TAPPING_TERM_FAST 200
 
