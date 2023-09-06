@@ -16,12 +16,11 @@ jobs:
           fetch-depth: 1
           submodules: recursive
 
-      - name: Install keymap-drawer (pypi)
-        if: inputs.install_branch == ''
-        run: python3 -m pip install keymap-drawer
+      # - name: Install keymap-drawer (pypi)
+      #   if: inputs.install_branch == ''
+      #   run: python3 -m pip install keymap-drawer
 
       - name: Install keymap-drawer (git)
-        if: inputs.install_branch != ''
         run: python3 -m pip install "git+https://github.com/caksoylar/keymap-drawer.git"
 
       - name: Draw keymaps
