@@ -110,14 +110,14 @@
 //    ├───┼────┼───┼───┼───┼───┤       ├──────┼──────┼──────┼───┼────┼───┤
 //    │   │    │   │   │   │   │       │  🔇  │  🔉  │  🔊  │   │    │   │
 //    ├───┼────┼───┼───┼───┼───┼───────┼──────┼──────┼──────┼───┼────┼───┤
-//    │   │    │   │   │   │   │       │ 🛜❌ │ 🛜🔽 │ 🛜🔼 │   │    │   │
+//    │   │ 💾 │   │   │   │   │       │ 🛜❌ │ 🛜🔽 │ 🛜🔼 │   │ 💾 │   │
 //    ╰───┴────┴───┼───┼───┼───┼───┬───┼──────┼──────┼──────┼───┴────┴───╯
 //                 │   │   │   │   │ ⏯️ │  ⏮️   │  ⏭️   │      │             
 //                 ╰───┴───┴───┴───┴───┴──────┴──────┴──────╯             
-  _LTX   &reset_td   &trans   &trans   &trans   &trans                       &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   &trans   &reset_td   _RTX
-  _LMX   &trans      &trans   &trans   &trans   &trans                       &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   &trans   &trans      _RMX
-  _LBX   &trans      &trans   &trans   &trans   &trans         _MBX          &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     &trans   &trans      _RBX
-                              _LHX     &trans   &trans   &trans   &kp C_PP   &kp C_PREV          &kp C_NEXT     _RHX                                    
+  _LTX   &sys_reset    &trans   &trans   &trans   &trans                       &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   &trans   &sys_reset    _RTX
+  _LMX   &trans        &trans   &trans   &trans   &trans                       &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   &trans   &trans        _RMX
+  _LBX   &bootloader   &trans   &trans   &trans   &trans         _MBX          &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     &trans   &bootloader   _RBX
+                                _LHX     &trans   &trans   &trans   &kp C_PP   &kp C_PREV          &kp C_NEXT     _RHX                                      
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };

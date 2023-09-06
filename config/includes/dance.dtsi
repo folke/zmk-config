@@ -1,11 +1,12 @@
 / {
   behaviors {
-    reset_td: reset_td {
-      compatible = "zmk,behavior-tap-dance";
-      label = "RESET_TD";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&sys_reset>, <&bootloader>;
-    };
+    // NOTE: This is not working yet due to locality
+    // reset_td: reset_td {
+    //   compatible = "zmk,behavior-tap-dance";
+    //   label = "RESET_TD";
+    //   #binding-cells = <0>;
+    //   tapping-term-ms = <200>;
+    //   bindings = <&sys_reset>, <&bootloader>;
+    // };
   };
 };
