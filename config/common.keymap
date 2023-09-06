@@ -6,6 +6,12 @@
 #include "includes/combos.dtsi"
 #include "includes/morphs.dtsi"
 
+#if SHIELD_SPLITKB_AURORA_SOFLE_RIGHT
+&nice_view_spi {
+    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+};
+#endif
+
 #define BASE  0
 #define LOWER 1
 #define RAISE 2
