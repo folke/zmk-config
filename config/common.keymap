@@ -5,28 +5,12 @@
 #include "includes/mods.dtsi"
 #include "includes/combos.dtsi"
 #include "includes/morphs.dtsi"
-
-#if defined(NICE_VIEW_SPI)
-&nice_view_spi {
-    cs-gpios = <NICE_VIEW_SPI>;
-};
-#endif
+#include "includes/settings.dtsi"
 
 #define BASE  0
 #define LOWER 1
 #define RAISE 2
 #define FUN   3
-
-&mt {
-  tapping-term-ms = <200>;
-};
-
-&lt {  // layer-tap config
-  flavor = "balanced";
-  tapping-term-ms = <200>;
-  quick-tap-ms = <175>;
-};
-
 
 / {
  
