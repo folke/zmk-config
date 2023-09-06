@@ -1,5 +1,8 @@
 # Folke's ZMK Config
 
+I'm just getting started with split keyboards and ZMK, so this is a work in progress.
+My current keyboard is an Aurora Sofle v2, but I'm planning to build a Chocofi soon.
+
 ## Keymap
 
 ![Keymap](img/corne.svg)
