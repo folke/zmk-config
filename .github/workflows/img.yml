@@ -1,6 +1,6 @@
 # Reusable workflow for drawing and committing an automated keymap diagram
 # for ZMK config repos using https://github.com/caksoylar/keymap-drawer
-name: Draw ZMK keymaps
+name: Update ZMK Images
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
