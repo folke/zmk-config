@@ -6,7 +6,7 @@
 #include "includes/combos.dtsi"
 #include "includes/morphs.dtsi"
 
-#if !defined(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 &nice_view_spi {
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
