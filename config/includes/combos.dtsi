@@ -23,12 +23,12 @@
     //   layers = <BASE>;
     // };
 
-    // combo_equal {
-    //   timeout-ms = <50>;
-    //   key-positions = <LM1 LM0>;
-    //   bindings = <&kp EQUAL>;
-    //   layers = <BASE>;
-    // };
+    combo_equal {
+      timeout-ms = <50>;
+      key-positions = <RM0 RM1>;
+      bindings = <&kp EQUAL>;
+      layers = <BASE>;
+    };
 
     // [
     combo_lbkt {
