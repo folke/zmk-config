@@ -1,32 +1,32 @@
 / {
-    behaviors {
-        comma_morph: comma_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_MORPH";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-            mods = <(MOD_RSFT)>;
-        };
-        dot_morph: dot_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_MORPH";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_RSFT)>;
-        };
-        quote_morph: quote_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "QUOTE_MORPH";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp SQT>;
-            mods = <(MOD_RSFT)>;
-        };
-        qmark_morph: qmark_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "QMARK_MORPH";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp EXCL>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
+  behaviors {
+    comma_morph: comma_morph {
+      compatible = "zmk,behavior-mod-morph";
+      label = "COMMA_MORPH";
+      #binding-cells = <0>;
+      bindings = <&kp COMMA>, <&kp SEMI>;
+      mods = <(MOD_RSFT)>;
     };
+    dot_morph: dot_morph {
+      compatible = "zmk,behavior-mod-morph";
+      label = "DOT_MORPH";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp COLON>;
+      mods = <(MOD_RSFT)>;
+    };
+    // quote_morph: quote_morph {
+    //   compatible = "zmk,behavior-mod-morph";
+    //   label = "QUOTE_MORPH";
+    //   #binding-cells = <0>;
+    //   bindings = <&kp DQT>, <&kp SQT>;
+    //   mods = <(MOD_RSFT)>;
+    // };
+    qmark_morph: qmark_morph {
+      compatible = "zmk,behavior-mod-morph";
+      label = "QMARK_MORPH";
+      #binding-cells = <0>;
+      bindings = <&kp QMARK>, <&kp EXCL>;
+      mods = <(MOD_RSFT|MOD_LSFT)>;
+    };
+  };
 };
