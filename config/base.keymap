@@ -48,14 +48,14 @@
 //    ╭───┬──────┬──────┬───────┬───────┬────╮       ╭───┬───┬───┬───┬───┬───╮
 //    │   │  ⌘Q  │  ⌃W  │  ⇧⌃⇥  │  ⌃⇥   │ ⌃T │       │ [ │ ] │ { │ } │ % │   │
 //    ├───┼──────┼──────┼───────┼───────┼────┤       ├───┼───┼───┼───┼───┼───┤
-//    │   │ LGUI │ LALT │ LCTRL │ LSHFT │    │       │ " │ = │ ( │ ) │ ` │   │
+//    │   │ LGUI │ LALT │ LCTRL │ LSHFT │    │       │ # │ = │ ( │ ) │ ` │   │
 //    ├───┼──────┼──────┼───────┼───────┼────┼───────┼───┼───┼───┼───┼───┼───┤
 //    │   │  ↩️   │  ✂️   │  📄   │  📋   │    │       │ ^ │ $ │ < │ > │ ~ │   │
 //    ╰───┴──────┴──────┼───────┼───────┼────┼───┬───┼───┼───┼───┼───┴───┴───╯
 //                      │       │  🌍   │    │   │ _ │ - │ + │   │            
 //                      ╰───────┴───────┴────┴───┴───┴───┴───┴───╯            
   _LTX   &kp LG(Q)   &kp LC(W)     &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)                             &kp LBKT    &kp RBKT     &kp LBRC   &kp RBRC   &kp PRCNT   _RTX
-  _LMX   &kp LGUI    &kp LALT      &kp LCTRL         &kp LSHFT     &trans                                &kp DQT     &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE   _RMX
+  _LMX   &kp LGUI    &kp LALT      &kp LCTRL         &kp LSHFT     &trans                                &kp HASH    &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE   _RMX
   _LBX   &kp UNDO    &kp LS(DEL)   &kp LC(INS)       &kp LS(INS)   &trans               _MBX             &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE   _RBX
                                    _LHX              &kp K_CMENU   &trans      &trans   &kp UNDERSCORE   &kp MINUS   &kp PLUS     _RHX                                  
       >;
@@ -66,17 +66,17 @@
       label = "Raise";
       bindings = <
 //    ╭───┬───┬───┬───┬───┬───╮       ╭───┬───┬───┬───┬──────┬───╮
-//    │   │   │ 7 │ 8 │ 9 │ 0 │       │ & │ / │ | │ \ │      │   │
+//    │   │   │ 7 │ 8 │ 9 │   │       │ & │ / │ | │ \ │      │   │
 //    ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼──────┼───┤
-//    │   │ @ │ 4 │ 5 │ 6 │ * │       │ ← │ ↓ │ ↑ │ → │ RGUI │   │
+//    │   │ @ │ 4 │ 5 │ 6 │ 0 │       │ ← │ ↓ │ ↑ │ → │ RGUI │   │
 //    ├───┼───┼───┼───┼───┼───┼───────┼───┼───┼───┼───┼──────┼───┤
-//    │   │   │ 1 │ 2 │ 3 │ # │       │ ⇱ │ ⇟ │ ⇞ │ ⇲ │      │   │
+//    │   │   │ 1 │ 2 │ 3 │ * │       │ ⇱ │ ⇟ │ ⇞ │ ⇲ │      │   │
 //    ╰───┴───┴───┼───┼───┼───┼───┬───┼───┼───┼───┼───┴──────┴───╯
 //                │   │   │   │   │   │   │   │   │               
 //                ╰───┴───┴───┴───┴───┴───┴───┴───╯               
-  _LTX   &trans   &kp N7   &kp N8   &kp N9   &kp N0                              &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    &trans     _RTX
-  _LMX   &kp AT   &kp N4   &kp N5   &kp N6   &kp KP_MULTIPLY                     &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI   _RMX
-  _LBX   &trans   &kp N1   &kp N2   &kp N3   &kp HASH               _MBX         &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans     _RBX
+  _LTX   &trans   &kp N7   &kp N8   &kp N9   &trans                              &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    &trans     _RTX
+  _LMX   &kp AT   &kp N4   &kp N5   &kp N6   &kp N0                              &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI   _RMX
+  _LBX   &trans   &kp N1   &kp N2   &kp N3   &kp KP_MULTIPLY        _MBX         &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans     _RBX
                            _LHX     &trans   &trans            &trans   &trans   &trans     &trans      _RHX                                   
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
