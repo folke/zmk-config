@@ -12,14 +12,14 @@ layers:
   - O
   - P
   - {t: A, h: ⌘}
-  - {t: S, h: ⎇}
+  - {t: S, h: ⌥}
   - {t: D, h: ⌃}
   - {t: F, h: ⇧}
   - G
   - H
   - {t: J, h: ⇧}
   - {t: K, h: ⌃}
-  - {t: L, h: ⎇}
+  - {t: L, h: ⌥}
   - {t: '''', h: ⌘}
   - Z
   - X
@@ -31,25 +31,25 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: ↹, h: ⌘}
+  - {t: ⇥, h: ⌘}
   - {t: ⎋, h: Lower}
   - {t: ⏎, h: Adjust}
   - {t: ⎵, h: ⇧}
   - {t: ⌫, h: Raise}
   - {t: ⌦, h: Fun}
   Lower:
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ⌘Q
+  - ⌃W
+  - ⇧⌃⇥
+  - ⌃⇥
+  - ⌃T
   - '['
   - ']'
   - '{'
   - '}'
   - '%'
   - ⌘
-  - ⎇
+  - ⌥
   - ⌃
   - ⇧
   - {t: ' ', type: trans}
@@ -58,17 +58,17 @@ layers:
   - (
   - )
   - '`'
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - 🌍
-  - {t: ' ', type: trans}
+  - ↩️
+  - ✂️
+  - 📄
+  - 📋
   - {t: ' ', type: trans}
   - ^
   - $
   - <
   - '>'
   - '~'
-  - {t: ' ', type: trans}
+  - 🌍
   - {type: held}
   - {t: ' ', type: trans}
   - _
@@ -130,7 +130,7 @@ layers:
   - {t: ' ', type: trans}
   - ⇧
   - ⌃
-  - ⎇
+  - ⌥
   - ⌘
   - F10
   - F1

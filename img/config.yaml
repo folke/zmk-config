@@ -161,74 +161,16 @@ parse_config:
     t: " "
     type: trans
   mark_alternate_layer_activators: false
-  qmk_keycode_map:
-    XXXXXXX: ''
-    'NO': ''
-    MINUS: '-'
-    MINS: '-'
-    EQUAL: '='
-    EQL: '='
-    LEFT_BRACKET: '['
-    LBRC: '['
-    RIGHT_BRACKET: ']'
-    RBRC: ']'
-    BACKSLASH: \
-    BSLS: \
-    NONUS_HASH: '#'
-    NUHS: '#'
-    SEMICOLON: ;
-    SCLN: ;
-    QUOTE: ''''
-    QUOT: ''''
-    GRAVE: '`'
-    GRV: '`'
-    COMMA: ','
-    COMM: ','
-    DOT: .
-    SLASH: /
-    SLSH: /
-    TILDE: '~'
-    TILD: '~'
-    EXCLAIM: '!'
-    EXLM: '!'
-    AT: '@'
-    HASH: '#'
-    DOLLAR: $
-    DLR: $
-    PERCENT: '%'
-    PERC: '%'
-    CIRCUMFLEX: ^
-    CIRC: ^
-    AMPERSAND: '&'
-    AMPR: '&'
-    ASTERISK: '*'
-    ASTR: '*'
-    LEFT_PAREN: (
-    LPRN: (
-    RIGHT_PAREN: )
-    RPRN: )
-    UNDERSCORE: _
-    UNDS: _
-    PLUS: +
-    LEFT_CURLY_BRACE: '{'
-    LCBR: '{'
-    RIGHT_CURLY_BRACE: '}'
-    RCBR: '}'
-    PIPE: '|'
-    COLON: ':'
-    COLN: ':'
-    DOUBLE_QUOTE: '"'
-    DQUO: '"'
-    DQT: '"'
-    LEFT_ANGLE_BRACKET: <
-    LABK: <
-    LT: <
-    RIGHT_ANGLE_BRACKET: '>'
-    RABK: '>'
-    GT: '>'
-    QUESTION: '?'
-    QUES: '?'
   zmk_keycode_map:
+    'LC(INS)': "📄"
+    'LS(INS)': "📋"
+    'LS(DEL)': "✂️"
+    'LG(Q)': "⌘Q"
+    'LC(W)': "⌃W"
+    'LC(T)': "⌃T"
+    'LC(TAB)': "⌃⇥"
+    'LS(LC(TAB))': "⇧⌃⇥"
+    UNDO: "↩️"
     EXCLAMATION: '!'
     EXCL: '!'
     AT_SIGN: '@'
@@ -302,6 +244,7 @@ parse_config:
     C_BRI_UP: "🔆"
     C_BRI_DN: "🔅"
     K_CMENU: 🌍
+    K_MENU: 🌍
     EP_TOG: "🔌"
     PG_UP: "⇞"
     HOME: "⇱"
@@ -314,22 +257,22 @@ parse_config:
     DOWN: "↓"
     KP_PLUS: "+"
     LCTRL: ⌃
-    LALT: ⎇
+    LALT: ⌥
     LGUI: ⌘
     LSHFT: ⇧
     RCTRL: ⌃
     LEFT_CONTROL: ⌃
-    LEFT_ALT: ⎇
+    LEFT_ALT: ⌥
     LEFT_GUI: ⌘
     LEFT_SHFT: ⇧
-    RALT: ⎇
+    RALT: ⌥
     RGUI: ⌘
     RSHFT: ⇧
     RIGHT_CONTROL: ⌃
-    RIGHT_ALT: ⎇
+    RIGHT_ALT: ⌥
     RIGHT_GUI: ⌘
     RIGHT_SHFT: ⇧
-    TAB: ↹
+    TAB: ⇥
     RET: '⏎'
     ESC: '⎋'
     BSPC: ⌫
