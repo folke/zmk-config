@@ -171,7 +171,9 @@ parse_config:
     'LC(T)': "⌃T"
     'LC(TAB)': "⌃⇥"
     'LS(LC(TAB))': "⇧⌃⇥"
-    UNDO: "↩️"
+    MEH: MEH
+    'LC(LS(LALT))': "MEH"
+    K_UNDO: "↩️"
     EXCLAMATION: '!'
     EXCL: '!'
     AT_SIGN: '@'

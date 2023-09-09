@@ -3,12 +3,12 @@ layers:
   Base:
   - Q
   - W
-  - E
+  - {t: E, h: MEH}
   - R
   - T
   - Y
   - U
-  - I
+  - {t: I, h: MEH}
   - O
   - P
   - {t: A, h: ⌘}
