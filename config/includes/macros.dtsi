@@ -1,0 +1,5 @@
+ZMK_MACRO(dot_spc,
+  wait-ms = <0>;
+  tap-ms = <5>;
+  bindings = <&kp DOT &kp SPACE &sk LSHFT>;
+)

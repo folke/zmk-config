@@ -10,6 +10,7 @@
 #define ADJUST 4
 
 #include "keys/base.h"
+#include "includes/macros.dtsi"
 #include "includes/mods.dtsi"
 #include "includes/dance.dtsi"
 #include "includes/combos.dtsi"

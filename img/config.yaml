@@ -148,6 +148,7 @@ parse_config:
     '&bootloader': "💾"
     '&sys_reset': "🔄"
     '&reset_td': "🔄"
+    '&dot_spc': ".⎵⇧"
     '&bt BT_SEL 0': 🛜1
     '&bt BT_SEL 1': 🛜2
     '&bt BT_SEL 2': 🛜3

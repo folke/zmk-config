@@ -23,6 +23,13 @@
     //   layers = <BASE>;
     // };
 
+    combo_dot_spc {
+      timeout-ms = <50>;
+      key-positions = <LH0 RH0>;
+      bindings = <&dot_spc>;
+      layers = <BASE>;
+    };
+
     combo_equal {
       timeout-ms = <50>;
       key-positions = <RM0 RM1>;
