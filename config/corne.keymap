@@ -1,2 +1,7 @@
 #include "keys/36.h"
+/ {
+    chosen {
+        zmk,matrix_transform = &five_column_transform;
+    };
+};
 #include "base.keymap"
