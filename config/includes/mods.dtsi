@@ -65,6 +65,7 @@
       flavor = "balanced";
       tapping-term-ms = <200>;
       quick_tap_ms = <175>;
+      retro-tap; // use tap when key is used without another key
     };
 
   };
