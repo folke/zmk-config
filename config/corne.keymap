@@ -130,23 +130,14 @@
       >;
     };
 
-    empty_layer {
-      display-name = "Empty";
-      bindings = <
-//    ╭───┬───┬───┬───┬───╮       ╭───┬───┬───┬───┬───╮
-//    │   │   │   │   │   │       │   │   │   │   │   │
-//    ├───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┤
-//    │   │   │   │   │   │       │   │   │   │   │   │
-//    ├───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┤
-//    │   │   │   │   │   │       │   │   │   │   │   │
-//    ╰───┴───┴───┼───┼───┼───┬───┼───┼───┼───┴───┴───╯
-//                │   │   │   │   │   │   │
-//                ╰───┴───┴───┴───┴───┴───╯
-  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans
-  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans
-  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans
-                             &trans   &trans   &trans   &trans   &trans   &trans
-      >;
-    };
+  // empty_layer {
+  //   display-name = "Empty";
+  //   bindings = <
+  //  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans 
+  //  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans 
+  //  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans 
+  //                          &trans   &trans   &trans   &trans   &trans   &trans
+  //   >;
+  // };
   };
 };
