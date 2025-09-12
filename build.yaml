@@ -1,8 +1,9 @@
-# This file generates the GitHub Actions matrix
-# For simple board + shield combinations, add them
-# to the top level board and shield arrays, for more
-# control, add individual board + shield combinations to
-# the `include` property, e.g:
+# This file generates the GitHub Actions matrix.
+# For simple board + shield combinations, add them to the top level board and
+# shield arrays, for more control, add individual board + shield combinations
+# to the `include` property. You can also use the `cmake-args` property to
+# pass flags to the build command, `snippet` to add a Zephyr snippet, and
+# `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 # board: [ "nice_nano_v2" ]
 # shield: [ "corne_left", "corne_right" ]
@@ -10,6 +11,11 @@
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
 #     shield: reviung41
+#   - board: nice_nano_v2
+#     shield: corne_left
+#     snippet: studio-rpc-usb-uart
+#     cmake-args: -DCONFIG_ZMK_STUDIO=y
+#     artifact-name: corne_left_with_studio
 #
 ---
 include:
@@ -21,5 +27,17 @@ include:
     shield: corne_left nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
-  # - board: nice_nano_v2
-  #   shield: settings_reset
+  # ZMK Studio enabled builds
+  - board: nice_nano_v2
+    shield: splitkb_aurora_sofle_left nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: splitkb_aurora_sofle_left_studio
+  - board: nice_nano_v2
+    shield: corne_left nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: corne_left_studio
+  # Settings reset utility
+  - board: nice_nano_v2
+    shield: settings_reset
