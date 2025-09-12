@@ -5,11 +5,12 @@ My current keyboard is an Aurora Sofle v2, and I'm using a Chocofi (Corne).
 
 ## Keymap
 
-![Keymap](img/corne.svg)
+![Keymap](svg/corne.svg)
 
 ## Recent Updates (2024)
 
 This configuration has been updated to work with the latest ZMK firmware:
+
 - Fixed syntax issues (`quick_tap_ms` → `quick-tap-ms`)
 - Enabled `hold-trigger-on-release` (now available in ZMK 0.3.0+)
 - Added `require-prior-idle-ms` for better home row mods performance
