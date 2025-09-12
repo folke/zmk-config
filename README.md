@@ -1,11 +1,27 @@
 # Folke's ZMK Config
 
 I'm just getting started with split keyboards and ZMK, so this is a work in progress.
-My current keyboard is an Aurora Sofle v2, but I'm planning to build a Chocofi soon.
+My current keyboard is an Aurora Sofle v2, and I'm using a Chocofi (Corne).
 
 ## Keymap
 
 ![Keymap](img/corne.svg)
+
+## Recent Updates (2024)
+
+This configuration has been updated to work with the latest ZMK firmware:
+- Fixed syntax issues (`quick_tap_ms` → `quick-tap-ms`)
+- Enabled `hold-trigger-on-release` (now available in ZMK 0.3.0+)
+- Added `require-prior-idle-ms` for better home row mods performance
+- Using modern ZMK features and best practices
+
+## Features
+
+- **Home Row Mods**: Using urob's timerless homerow mods approach
+- **Combos**: Efficient key combinations for common characters
+- **Layers**: BASE, LOWER, RAISE, FUN, and ADJUST layers
+- **Split Keyboard Support**: Aurora Sofle and Corne with Nice!View displays
+- **Modern ZMK**: Compatible with ZMK 0.3.0+ with latest features
 
 ## Resources
 
