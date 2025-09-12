@@ -143,101 +143,102 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map:
-    '&ext_power EP_TOG': "🔌"
-    '&caps_word': "🔠"
-    '&bootloader': "💾"
-    '&sys_reset': "🔄"
-    '&reset_td': "🔄"
-    '&dot_spc': ".⎵⇧"
-    '&bt BT_SEL 0': 🛜1
-    '&bt BT_SEL 1': 🛜2
-    '&bt BT_SEL 2': 🛜3
-    '&bt BT_SEL 3': 🛜4
-    '&bt BT_SEL 4': 🛜5
-    '&bt BT_NXT': 🛜🔼
-    '&bt BT_PRV': 🛜🔽
-    '&bt BT_CLR': 🛜❌
+    "&ext_power EP_TOG": "🔌"
+    "&caps_word": "🔠"
+    "&bootloader": "💾"
+    "&sys_reset": "🔄"
+    "&reset_td": "🔄"
+    "&studio_unlock": "🔓"
+    "&dot_spc": ".⎵⇧"
+    "&bt BT_SEL 0": 🛜1
+    "&bt BT_SEL 1": 🛜2
+    "&bt BT_SEL 2": 🛜3
+    "&bt BT_SEL 3": 🛜4
+    "&bt BT_SEL 4": 🛜5
+    "&bt BT_NXT": 🛜🔼
+    "&bt BT_PRV": 🛜🔽
+    "&bt BT_CLR": 🛜❌
   sticky_label: sticky
   trans_legend:
     t: " "
     type: trans
   mark_alternate_layer_activators: false
   zmk_keycode_map:
-    'LC(INS)': "📄"
-    'LS(INS)': "📋"
-    'LS(DEL)': "✂️"
-    'LG(Q)': "⌘Q"
-    'LC(W)': "⌃W"
-    'LC(T)': "⌃T"
-    'LC(TAB)': "⌃⇥"
-    'LS(LC(TAB))': "⇧⌃⇥"
+    "LC(INS)": "📄"
+    "LS(INS)": "📋"
+    "LS(DEL)": "✂️"
+    "LG(Q)": "⌘Q"
+    "LC(W)": "⌃W"
+    "LC(T)": "⌃T"
+    "LC(TAB)": "⌃⇥"
+    "LS(LC(TAB))": "⇧⌃⇥"
     MEH: MEH
-    'LC(LS(LALT))': "MEH"
+    "LC(LS(LALT))": "MEH"
     K_UNDO: "↩️"
-    EXCLAMATION: '!'
-    EXCL: '!'
-    AT_SIGN: '@'
-    AT: '@'
-    HASH: '#'
-    POUND: '#'
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
     DOLLAR: $
     DLLR: $
-    PERCENT: '%'
-    PRCNT: '%'
+    PERCENT: "%"
+    PRCNT: "%"
     CARET: ^
-    AMPERSAND: '&'
-    AMPS: '&'
-    ASTERISK: '*'
-    ASTRK: '*'
-    STAR: '*'
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
     LEFT_PARENTHESIS: (
     LPAR: (
     RIGHT_PARENTHESIS: )
     RPAR: )
-    EQUAL: '='
+    EQUAL: "="
     PLUS: +
-    MINUS: '-'
+    MINUS: "-"
     UNDERSCORE: _
     UNDER: _
     SLASH: /
     FSLH: /
-    QUESTION: '?'
-    QMARK: '?'
+    QUESTION: "?"
+    QMARK: "?"
     BACKSLASH: \
     BSLH: \
-    PIPE: '|'
+    PIPE: "|"
     NON_US_BACKSLASH: \
-    PIPE2: '|'
-    NON_US_BSLH: '|'
+    PIPE2: "|"
+    NON_US_BSLH: "|"
     SEMICOLON: ;
     SEMI: ;
-    COLON: ':'
-    SINGLE_QUOTE: ''''
-    SQT: ''''
+    COLON: ":"
+    SINGLE_QUOTE: "'"
+    SQT: "'"
     APOSTROPHE: <
     APOS: .
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    COMMA: ','
+    COMMA: ","
     LESS_THAN: <
     LT: <
     PERIOD: .
     DOT: .
-    GREATER_THAN: '>'
-    GT: '>'
-    LEFT_BRACKET: '['
-    LBKT: '['
-    LEFT_BRACE: '{'
-    LBRC: '{'
-    RIGHT_BRACKET: ']'
-    RBKT: ']'
-    RIGHT_BRACE: '}'
-    RBRC: '}'
-    GRAVE: '`'
-    TILDE: '~'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    TILDE2: '~'
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET: "["
+    LBKT: "["
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET: "]"
+    RBKT: "]"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE: "`"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
     C_NEXT: ⏭️
     C_PREV: ⏮️
     C_PP: ⏯️
@@ -276,8 +277,8 @@ parse_config:
     RIGHT_GUI: ⌘
     RIGHT_SHFT: ⇧
     TAB: ⇥
-    RET: '⏎'
-    ESC: '⎋'
+    RET: "⏎"
+    ESC: "⎋"
     BSPC: ⌫
     DEL: ⌦
     SPACE: ⎵
