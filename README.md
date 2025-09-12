@@ -1,7 +1,7 @@
 # Folke's ZMK Config
 
 I'm just getting started with split keyboards and ZMK, so this is a work in progress.
-My current keyboard is an Aurora Sofle v2, and I'm using a Chocofi (Corne).
+My current keyboard is a 36-key [Chocofi](https://github.com/pashutk/chocofi).
 
 ## Keymap
 
