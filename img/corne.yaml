@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
+layout: {zmk_keyboard: corne, layout_name: five_column_transform}
 layers:
   Base:
   - Q
