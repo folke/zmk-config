@@ -18,9 +18,9 @@
 #include "includes/settings.dtsi"
 
 #define MEH LC(LS(LALT))
-#define CUT LS(DEL)
-#define COPY LC(INS)
-#define PASTE LS(INS)
+#define MY_CUT LS(DEL)
+#define MY_COPY LC(INS)
+#define MY_PASTE LS(INS)
 #define COMPOSE K_CMENU
 
 / {
@@ -62,7 +62,7 @@
 //                      ╰───────┴───────┴────┴───┴───┴───┴───┴───╯            
   _LTX   &kp LG(Q)    &kp LC(W)   &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)                             &kp LBKT    &kp RBKT     &kp LBRC   &kp RBRC   &kp PRCNT   _RTX
   _LMX   &kp LGUI     &kp LALT    &kp LCTRL         &kp LSHFT     &trans                                &kp HASH    &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE   _RMX
-  _LBX   &kp K_UNDO   &kp K_CUT     &kp K_COPY          &kp PASTE     &trans               _MBX             &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE   _RBX
+  _LBX   &kp K_UNDO   &kp MY_CUT     &kp MY_COPY          &kp MY_PASTE     &trans               _MBX             &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE   _RBX
                                   _LHX              &kp COMPOSE   &trans      &trans   &kp UNDERSCORE   &kp MINUS   &kp PLUS     _RHX                                  
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
