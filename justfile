@@ -70,5 +70,12 @@ right: (_flash "right")
 left:  (_flash "left")
 reset: (_flash "settings_reset")
 
+svg:
+  #!/bin/env bash
+  {{SETUP}}
+
+  keymap -c svg/config.yml parse -z config/corne.keymap > svg/corne.yaml
+  keymap -c svg/config.yml draw -k chocofi -l LAYOUT svg/corne.yaml > svg/corne.svg
+
 
 

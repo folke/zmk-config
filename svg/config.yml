@@ -150,6 +150,7 @@ parse_config:
     "&reset_td": "🔄"
     "&studio_unlock": "🔓"
     "&dot_spc": ".⎵⇧"
+    "&to 0": ""
     "&bt BT_SEL 0": 🛜1
     "&bt BT_SEL 1": 🛜2
     "&bt BT_SEL 2": 🛜3
@@ -158,6 +159,19 @@ parse_config:
     "&bt BT_NXT": 🛜🔼
     "&bt BT_PRV": 🛜🔽
     "&bt BT_CLR": 🛜❌
+    "&mmv MOVE_UP": 🖱️ ↑
+    "&mmv MOVE_DOWN": 🖱️ ↓
+    "&mmv MOVE_LEFT": 🖱️ ←
+    "&mmv MOVE_RIGHT": 🖱️ →
+
+    "&msc SCRL_UP": 🖱️ ⇈
+    "&msc SCRL_DOWN": 🖱️ ⇊
+    "&msc SCRL_LEFT": 🖱️ ⇐
+    "&msc SCRL_RIGHT": 🖱️ ⇒
+
+    "&mkp LCLK": 🖱️L
+    "&mkp RCLK": 🖱️R
+    "&mkp MCLK": 🖱️M
   sticky_label: sticky
   trans_legend:
     t: " "
