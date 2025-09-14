@@ -18,19 +18,19 @@
     trigger-period-ms = <16>;
 };
 
-&mmv_input_listener {
-    precision {
-        layers = <NAV>;
-        input-processors = <&zip_xy_scaler 1 4>;
-    };
-};
-
-&msc_input_listener {
-    turbo {
-        layers = <NAV>;
-        input-processors = <&zip_scroll_scaler 4 1>;
-    };
-};
+// &mmv_input_listener {
+//     precision {
+//         layers = <NAV>;
+//         input-processors = <&zip_xy_scaler 1 4>;
+//     };
+// };
+// 
+// &msc_input_listener {
+//     turbo {
+//         layers = <NAV>;
+//         input-processors = <&zip_scroll_scaler 4 1>;
+//     };
+// };
 
 #define _MM_U &mmv MOVE_UP
 #define _MM_D &mmv MOVE_DOWN
