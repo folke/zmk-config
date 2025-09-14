@@ -2,82 +2,73 @@
 set shell := ["bash", "-cu"]
 
 # --- Config -------------------------------------------------------------------
-ARTIFACT_ZIP   := "firmware.zip"
 BUILD_DIR      := "build"
-LEFT   := "chocofi_left.uf2"
-RIGHT  := "chocofi_right.uf2"
-RESET  := "chocofi_settings_reset.uf2"
+SETUP := '
+  set -e
+  function fail() {
+    echo "❌ $1"
+    exit 1
+  }
+'
 
 # --- Helpers ------------------------------------------------------------------
 
-_init:
-  @mkdir -p {{BUILD_DIR}}
+default: status
+
+status:
+  @gh run list --workflow build.yml --limit 5
 
 clean:
   rm -rf {{BUILD_DIR}}
 
-_download id: _init
+update:
   #!/bin/env bash
-  set -e
+  {{SETUP}}
 
-  build={{BUILD_DIR}}/firmware_{{id}}
-
-  if [[ ! -d $build ]]; then
-    echo "Downloading artifacts for run {{id}}"
-    gh run download $id --name firmware --dir $build
-  fi
-
-update: _init
-  #!/bin/env bash
-  set -e
-
-  gh run list --workflow build.yml --limit 1 --json databaseId,conclusion,status > build/status.json
+  mkdir -p {{BUILD_DIR}}
+  gh run list --workflow build.yml --limit 1 --json databaseId,conclusion,status > {{BUILD_DIR}}/status.json
 
   id=$(jq -r '.[0].databaseId' build/status.json)
   status=$(jq -r '.[0].status' build/status.json)
   conclusion=$(jq -r '.[0].conclusion' build/status.json)
   build={{BUILD_DIR}}/firmware_$id
 
-  echo "Latest run: id=$id status=$status conclusion=$conclusion"
 
   if [[ "$status" == "completed" ]]; then
-    if [[ "$conclusion" == "success" ]]; then
-      echo "Build succeeded"
-    else
-      echo "Build failed"
-      exit 1
+    if [[ "$conclusion" != "success" ]]; then
+      fail "Build failed with '$conclusion'"
     fi
   else
-    echo "Build is still in progress"
-    exit 1
+    fail "Build not completed"
   fi
 
-  just _download $id
+  if [[ ! -d $build ]]; then
+    echo "Downloading artifacts for run $id"
+    gh run download $id --name firmware --dir $build
+  fi
 
-flash name: update
+  echo "✅ Latest build is ready in $build"
+
+_flash name: update
   #!/bin/env bash
-  set -e
+  {{SETUP}}
 
   id=$(jq -r '.[0].databaseId' build/status.json)
   firmware={{BUILD_DIR}}/firmware_$id/chocofi_{{name}}.uf2
   dest=/run/media/$USER/NICENANO/
 
-  if [[ ! -f $firmware ]]; then
-    echo "Firmware file $firmware not found!"
-    exit 1
-  fi
-
-  if [[ ! -d $dest ]]; then
-    echo "Device not found at $dest"
-    exit 1
-  fi
+  [[ -f $firmware ]] || fail "Firmware file $firmware not found!"
+  [[ -d $dest ]] || fail "Device not found at $dest"
 
   echo "Flashing $firmware to $dest"
+
   cp $firmware $dest
 
-right: (flash "right")
-left:  (flash "left")
-reset: (flash "settings_reset")
+  echo "✅ Flash complete!"
+
+right: (_flash "right")
+left:  (_flash "left")
+reset: (_flash "settings_reset")
 
 
 
