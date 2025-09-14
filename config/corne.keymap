@@ -9,16 +9,19 @@
 #define RAISE 2
 #define FUN   3
 #define ADJUST 4
+#define MOUSE 5
 
 // Keys
 #define MEH LC(LS(LALT))
-#define MY_CUT LS(DEL)
-#define MY_COPY LC(INS)
-#define MY_PASTE LS(INS)
-#define COMPOSE K_CMENU
+#define U_CUT LS(DEL)
+#define U_COPY LC(INS)
+#define U_PASTE LS(INS)
+#define ___ &trans
+#define _0_ &to BASE
 
 #include "includes/keys.h"
 #include "includes/macros.dtsi"
+#include "includes/mouse.dtsi"
 #include "includes/mods.dtsi"
 #include "includes/dance.dtsi"
 #include "includes/combos.dtsi"
@@ -66,10 +69,10 @@
 //    ╰──────┴──────┴───────┼──────┼────┼───┬───┼───┼───┼───┴───┴───╯
 //                          │  🌍  │    │   │ _ │ - │ + │
 //                          ╰──────┴────┴───┴───┴───┴───╯
-  &kp LG(Q)    &kp LC(W)    &kp LS(LC(TAB))   &kp LC(TAB)    &kp LC(T)                             &kp LBKT    &kp RBKT     &kp LBRC   &kp RBRC   &kp PRCNT
-  &kp LGUI     &kp LALT     &kp LCTRL         &kp LSHFT      &trans                                &kp HASH    &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE
-  &kp K_UNDO   &kp MY_CUT   &kp MY_COPY       &kp MY_PASTE   &trans                                &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE
-                                              &kp COMPOSE    &trans      &trans   &kp UNDERSCORE   &kp MINUS   &kp PLUS
+  &kp LG(Q)    &kp LC(W)   &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)                          &kp LBKT    &kp RBKT     &kp LBRC   &kp RBRC   &kp PRCNT
+  &kp LGUI     &kp LALT    &kp LCTRL         &kp LSHFT     ___                                &kp HASH    &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE
+  &kp K_UNDO   &kp U_CUT   &kp U_COPY        &kp U_PASTE   ___                                &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE
+                                             &kp K_CMENU   ___         ___   &kp UNDERSCORE   &kp MINUS   &kp PLUS
       >;
     };
 
@@ -85,10 +88,10 @@
 //    ╰───┴───┴───┼───┼───┼───┬───┼───┼───┼───┴───┴──────╯
 //                │   │   │   │   │   │   │
 //                ╰───┴───┴───┴───┴───┴───╯
-  &trans   &kp N7   &kp N8   &kp N9   &trans                              &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    &trans
-  &kp AT   &kp N4   &kp N5   &kp N6   &kp N0                              &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI
-  &trans   &kp N1   &kp N2   &kp N3   &kp KP_MULTIPLY                     &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans
-                             &trans   &trans            &trans   &trans   &trans     &trans
+  ___      &kp N7   &kp N8   &kp N9   ___                           &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    ___
+  &kp AT   &kp N4   &kp N5   &kp N6   &kp N0                        &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI
+  ___      &kp N1   &kp N2   &kp N3   &kp KP_MULTIPLY               &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     ___
+                             ___      ___               ___   ___   ___        ___
       >;
     };
 
@@ -104,10 +107,10 @@
 //    ╰─────┴────┴────┼────┼──────┼───┬───┼───┼──────┼───────┴──────┴──────╯
 //                    │    │      │   │   │   │      │
 //                    ╰────┴──────┴───┴───┴───┴──────╯
-  &kp F12   &kp F7   &kp F8   &kp F9   &kp PSCRN                     &trans   &trans      &trans      &trans     &trans
-  &kp F11   &kp F4   &kp F5   &kp F6   &trans                        &trans   &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI
-  &kp F10   &kp F1   &kp F2   &kp F3   &trans                        &trans   &trans      &trans      &trans     &trans
-                              &trans   &trans      &trans   &trans   &trans   &trans
+  &kp F12   &kp F7   &kp F8   &kp F9   &kp PSCRN               ___   ___         ___         ___        ___
+  &kp F11   &kp F4   &kp F5   &kp F6   ___                     ___   &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI
+  &kp F10   &kp F1   &kp F2   &kp F3   ___                     ___   ___         ___         ___        ___
+                              ___      ___         ___   ___   ___   ___
       >;
     };
 
@@ -123,20 +126,39 @@
 //    ╰────┴───┴───┼───┼───┼───┬────┼──────┼──────┼──────┴───┴────╯
 //                 │   │   │   │ ⏯️ │  ⏮️  │  ⏭️  │
 //                 ╰───┴───┴───┴────┴──────┴──────╯
-  &sys_reset    &trans   &trans   &trans   &trans                       &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   &trans   &sys_reset
-  &trans        &trans   &trans   &trans   &trans                       &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   &trans   &trans
-  &bootloader   &trans   &trans   &trans   &trans                       &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     &trans   &bootloader
-                                  &trans   &trans   &trans   &kp C_PP   &kp C_PREV          &kp C_NEXT
+  &sys_reset    ___   ___   ___   ___                    &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   ___   &sys_reset
+  ___           ___   ___   ___   ___                    &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   ___   ___
+  &bootloader   ___   ___   ___   ___                    &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     ___   &bootloader
+                            ___   ___   ___   &kp C_PP   &kp C_PREV          &kp C_NEXT
+      >;
+    };
+
+    mouse_layer {
+      display-name = "Mouse";
+      bindings = <
+//    ╭──────┬──────┬───────┬──────┬───╮         ╭─────┬─────┬─────┬─────┬───╮
+//    │      │      │       │      │   │         │ 🖱️⇇ │ 🖱️⇊ │ 🖱️⇈ │ 🖱️⇉ │   │
+//    ├──────┼──────┼───────┼──────┼───┤         ├─────┼─────┼─────┼─────┼───┤
+//    │ RGUI │ LALT │ LCTRL │ LSFT │   │         │ 🖱️← │ 🖱️↓ │ 🖱️↑ │ 🖱️→ │   │
+//    ├──────┼──────┼───────┼──────┼───┤         ├─────┼─────┼─────┼─────┼───┤
+//    │      │      │       │      │   │         │     │  ⇟  │  ⇞  │     │   │
+//    ╰──────┴──────┴───────┼──────┼───┼───┬─────┼─────┼─────┼─────┴─────┴───╯
+//                          │      │   │   │ 🖱️L │ 🖱️R │ 🖱️M │
+//                          ╰──────┴───┴───┴─────┴─────┴─────╯
+  _0_        _0_        _0_         _0_         _0_                     _MS_L       _MS_D       _MS_U       _MS_R   _0_
+  &kp RGUI   &kp LALT   &kp LCTRL   &kp LSHFT   _0_                     _MM_L       _MM_D       _MM_U       _MM_R   _0_
+  _0_        _0_        _0_         _0_         _0_                     _0_         &kp PG_DN   &kp PG_UP   _0_     _0_
+                                    _0_         _0_   _0_   &mkp LCLK   &mkp RCLK   &mkp MCLK
       >;
     };
 
   // empty_layer {
   //   display-name = "Empty";
   //   bindings = <
-  //  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans 
-  //  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans 
-  //  &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans 
-  //                          &trans   &trans   &trans   &trans   &trans   &trans
+  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___ 
+  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___ 
+  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___ 
+  //                          ___   ___   ___   ___   ___   ___
   //   >;
   // };
   };

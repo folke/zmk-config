@@ -9,6 +9,13 @@
       layers = <BASE>;
     };
 
+    combo_mouse {
+      timeout-ms = <50>;
+      key-positions = <RH1 RH2>;
+      bindings = <&to MOUSE>;
+      layers = <BASE>;
+    };
+
     // combo_reset {
     //   timeout-ms = <50>;
     //   key-positions = <LT0 RT0>;

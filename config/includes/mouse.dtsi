@@ -1,0 +1,42 @@
+// Based on https://github.com/caksoylar/zmk-config/blob/main/config/includes/mouse.dtsi
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 200   // 10
+
+#include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
+
+&mmv {
+    acceleration-exponent = <1>;      // 1
+    time-to-max-speed-ms = <500>;     // 300
+    trigger-period-ms = <16>;
+};
+
+&msc {
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <40>;      // 300
+    trigger-period-ms = <16>;
+};
+
+&mmv_input_listener {
+    precision {
+        layers = <NAV>;
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
+};
+
+&msc_input_listener {
+    turbo {
+        layers = <NAV>;
+        input-processors = <&zip_scroll_scaler 4 1>;
+    };
+};
+
+#define _MM_U &mmv MOVE_UP
+#define _MM_D &mmv MOVE_DOWN
+#define _MM_L &mmv MOVE_LEFT
+#define _MM_R &mmv MOVE_RIGHT
+#define _MS_U &msc SCRL_UP
+#define _MS_D &msc SCRL_DOWN
+#define _MS_L &msc SCRL_LEFT
+#define _MS_R &msc SCRL_RIGHT
